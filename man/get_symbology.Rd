@@ -38,7 +38,7 @@ For example: convert SEDOL instrument names to RIC names
 --------
 library(eikon_r)
 set_app_id('YOUR_APP_ID')
-> get_symbology(["MSFT.O", "GOOG.O", "IBM.N"], from_symbol_type="RIC", to_symbol_type="ISIN")
+> get_symbology(list("MSFT.O", "GOOG.O", "IBM.N"), from_symbol_type="RIC", to_symbol_type="ISIN")
 > print(ISIN_codes)
 ISIN
 MSFT.O  US5949181045
